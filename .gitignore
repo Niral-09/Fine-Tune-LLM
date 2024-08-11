@@ -1,0 +1,14 @@
+/env
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite
+.env
+venv/
+*.log
+/venv
+/.venv
+.venv
+/fine-tuned-model
