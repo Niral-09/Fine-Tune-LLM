@@ -11,4 +11,4 @@ venv/
 /venv
 /.venv
 .venv
-/fine-tuned-model
+backend/fine-tuned-model

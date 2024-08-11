@@ -1,8 +1,7 @@
 from pydantic import BaseModel
 
 class QARequest(BaseModel):
-    context: str
-    question: str
+    command: str
 
 class ConfigRequest(BaseModel):
     model_name: str

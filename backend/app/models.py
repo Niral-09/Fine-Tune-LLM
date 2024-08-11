@@ -1,9 +1,9 @@
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 import torch
-
+import os
 
 model_name = "fine-tuned-model"
-tokenizer = AutoTokenizer.from_pretrained(model_name)
+tokenizer = AutoTokenizer.from_pretrained(model_name, use_safetensors=True)
 model = AutoModelForSequenceClassification.from_pretrained(model_name)
 
 device = torch.device("cpu")

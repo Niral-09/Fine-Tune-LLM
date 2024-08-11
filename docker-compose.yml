@@ -1,15 +1,13 @@
-version: '3.8'
+version: '3.11'
 
 services:
   backend:
     build:
       context: ./backend
     ports:
-      - "8001:8000"
+      - "8000:8000"
     volumes:
       - ./backend:/app
-    environment:
-      - PYTHONUNBUFFERED=1
     depends_on:
       - frontend
 
@@ -21,4 +19,4 @@ services:
     volumes:
       - ./frontend:/app
     environment:
-      - API_URL=http://backend:8001
+      - API_URL=http://0.0.0.0:8000
